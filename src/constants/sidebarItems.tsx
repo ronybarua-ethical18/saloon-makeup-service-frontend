@@ -22,10 +22,31 @@ export const sidebarItems = (role: string) => {
     },
   ];
 
+  const sellerSidebarItems: MenuProps["items"] = [
+    ...defaultSidebarItems,
+    {
+      label: <Link href={`${role}/manage-orders`}>Manage Bookings</Link>,
+      key: `${role}/manage-bookings`,
+    },
+    {
+      label: <Link href={`${role}/manage-sellers`}>Manage Services</Link>,
+      key: `${role}/manage-sellers`,
+    
+    },
+  ];
+
   const adminSidebarItems: MenuProps["items"] = [
     {
-      label: <Link href={`${role}/manage-orders`}>Manage Orders</Link>,
-      key: `${role}/manage-orders`,
+      label: <Link href={`${role}/manage-orders`}>Manage Bookings</Link>,
+      key: `${role}/manage-bookings`,
+    },
+    {
+      label: <Link href={`${role}/manage-sellers`}>Manage Sellers</Link>,
+      key: `${role}/manage-sellers`,
+    },
+    {
+      label: <Link href={`${role}/manage-customers`}>Manage Customers</Link>,
+      key: `${role}/manage-customers`,
     },
   ];
 
@@ -33,12 +54,25 @@ export const sidebarItems = (role: string) => {
     ...defaultSidebarItems,
     ...adminSidebarItems,
     {
-      label: <Link href={`${role}/manage-users`}>Manage Users</Link>,
-      key: `${role}/manage-users`,
+      label: <Link href={`${role}/manage-orders`}>Manage Bookings</Link>,
+      key: `${role}/manage-bookings`,
+    },
+    {
+      label: <Link href={`${role}/manage-sellers`}>Manage Sellers</Link>,
+      key: `${role}/manage-sellers`,
+    },
+    {
+      label: <Link href={`${role}/manage-customers`}>Manage Customers</Link>,
+      key: `${role}/manage-customers`,
+    },
+    {
+      label: <Link href={`${role}/manage-admins`}>Manage Admins</Link>,
+      key: `${role}/manage-admins`,
     },
   ];
 
   if (role === UserRole.USER) return defaultSidebarItems;
+  else if (role === UserRole.SELLER) return sellerSidebarItems
   else if (role === UserRole.ADMIN) return adminSidebarItems;
   else if (role === UserRole.SUPER_ADMIN) return superAdminSiderbarItems;
   else return defaultSidebarItems;

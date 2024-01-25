@@ -59,7 +59,7 @@ export default function Sidebar(): React.ReactNode {
         theme="dark"
         mode="inline"
         defaultSelectedKeys={["2"]}
-        items={sidebarItems(role.ADMIN)}
+        items={sidebarItems(role.SELLER)}
       />
     </Sider>
   );
