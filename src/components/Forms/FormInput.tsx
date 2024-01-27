@@ -2,11 +2,11 @@
 
 // import { getErrorMessageByPropertyName } from "@/utils/schema-validator";
 import { Input } from "antd";
-import { spawn } from "child_process";
 import { useFormContext, Controller } from "react-hook-form";
 interface IInput {
   name: string;
   type?: string;
+ 
   size?: "large" | "small";
   value?: string | string[] | undefined;
   id?: string;
@@ -14,6 +14,7 @@ interface IInput {
   validation?: object;
   label?: string;
   required?: boolean;
+  prefix?:React.ReactNode;
 }
 
 const FormInput = ({
@@ -21,6 +22,7 @@ const FormInput = ({
   type,
   size = "large",
   value,
+  prefix,
   id,
   placeholder,
   validation,
@@ -54,6 +56,7 @@ const FormInput = ({
             <Input.Password
               type={type}
               size={size}
+              prefix={prefix}
               placeholder={placeholder}
               {...field}
               value={value ? value : field.value}
@@ -62,6 +65,7 @@ const FormInput = ({
             <Input
               type={type}
               size={size}
+              prefix={prefix}
               placeholder={placeholder}
               {...field}
               value={value ? value : field.value}

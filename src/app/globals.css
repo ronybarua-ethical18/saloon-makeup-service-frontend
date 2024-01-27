@@ -6,3 +6,21 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+h4{
+  font-weight: 400;
+}
+.slick-dots li {
+  margin:30px !important;
+}
+.slick-dots li button:before {
+  background-color: #407AFF;
+  height: 8px !important;
+  width: 70px !important;
+  border-radius: 10px;
+  /* text-indent: -9999px; */
+  overflow:hidden; 
+  position:absolute;
+  bottom:5px
+  }
+
+  
