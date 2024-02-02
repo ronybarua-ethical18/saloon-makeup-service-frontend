@@ -5,10 +5,26 @@
   padding: 0;
   margin: 0;
   font-family: "Rubik", sans-serif;
+  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin:10px 0px;
+  font-weight: 600;
 }
 h4{
   font-weight: 400;
 }
+
+.flexCenterBetween{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* react slice overrides */
 .slick-dots li {
   margin:30px !important;
 }
@@ -23,6 +39,8 @@ h4{
   bottom:5px
   }
 
+
+  /* antd design overrides  */
   .ant-menu-item-selected {
     background-color: #eef4ff !important;
     color:black;

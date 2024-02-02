@@ -13,38 +13,33 @@ import { UserRole } from './role'
 import Link from 'next/link'
 
 export const sidebarItems = (role: string) => {
+
   const defaultSidebarItems: MenuProps['items'] = [
     {
       label: 'Dashboard',
       key: 'profile',
       icon: <RxDashboard style={{ fontSize: '16px' }} />,
-      // children: [
-      //   {
-      //     label: "Account Profile",
-      //     key: "account-profile",
-      //   },
-      //   {
-      //     label: "Change Password",
-      //     key: "change-password",
-      //   },
-      // ],
     },
   ]
 
   const sellerSidebarItems: MenuProps['items'] = [
-    ...defaultSidebarItems,
     {
-      label: <Link href={`${role}/`}>Bookings</Link>,
+      label: <Link href={`/${role}/dashboard`}>Dashboard</Link>,
+      key: `${role}/dashboard`,
+      icon: <TbBrandBooking style={{ fontSize: '16px' }} />,
+    },
+    {
+      label: <Link href={`/${role}/bookings`}>Bookings</Link>,
       key: `${role}/bookings`,
       icon: <TbBrandBooking style={{ fontSize: '16px' }} />,
     },
     {
-      label: <Link href={`${role}`}>Services</Link>,
+      label: <Link href={`/${role}/services`}>Services</Link>,
       key: `${role}/services`,
       icon: <GrServices style={{ fontSize: '16px' }} />,
     },
     {
-      label: <Link href={`${role}/`}>Customers</Link>,
+      label: <Link href={`/${role}/customers`}>Customers</Link>,
       key: `${role}/customers`,
       icon: <FaUsers style={{ fontSize: '16px' }} />,
     },
@@ -60,19 +55,18 @@ export const sidebarItems = (role: string) => {
     ...sellerSidebarItems,
   
     {
-      label: <Link href={`${role}/`}>Blogs</Link>,
+      label: <Link href={`${role}/blogs`}>Blogs</Link>,
       key: `${role}/blogs`,
       icon: <LiaBlogSolid style={{ fontSize: '16px' }} />,
     },
     {
-      label: <Link href={`${role}/`}>FAQ</Link>,
+      label: <Link href={`${role}/faqs`}>FAQ</Link>,
       key: `${role}/faqs`,
       icon: <MdOutlineQuestionAnswer style={{ fontSize: '16px' }} />,
     },
   ]
 
   const superAdminSiderbarItems: MenuProps['items'] = [
-    ...defaultSidebarItems,
     ...adminSidebarItems,
     {
       label: <Link href={`${role}/manage-orders`}>Manage Bookings</Link>,

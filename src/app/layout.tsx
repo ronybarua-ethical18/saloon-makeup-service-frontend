@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
-import Providers from '@/lib/Providers'
 import { AntdRegistry } from '@ant-design/nextjs-registry'
+import Providers from '@/lib/Providers'
 import './globals.css'
 
 

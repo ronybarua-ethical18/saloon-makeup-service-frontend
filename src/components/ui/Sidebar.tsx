@@ -8,9 +8,7 @@ import {
 import { Layout, Menu } from 'antd'
 import { UserRole } from '@/constants/role'
 import { sidebarItems } from '@/constants/sidebarItems'
-import { MdOutlineAdminPanelSettings } from "react-icons/md";
-
-
+import { MdOutlineAdminPanelSettings } from 'react-icons/md'
 
 const { Sider } = Layout
 
@@ -47,7 +45,7 @@ export default function Sidebar(): React.ReactNode {
         top: 0,
         bottom: 0,
         left: 0,
-        zIndex:999
+        zIndex: 999,
       }}
     >
       <div
@@ -56,22 +54,23 @@ export default function Sidebar(): React.ReactNode {
           fontSize: '30px',
           textAlign: 'center',
           margin: '2rem auto',
-          color:'#6a9cff',
-          display:'flex',
-          alignItems:'center',
-          justifyContent:'center'
+          color: '#6a9cff',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
         }}
       >
-        <MdOutlineAdminPanelSettings style={{marginRight:'10px', color:'#6a9cff'}} />
-
+        <MdOutlineAdminPanelSettings
+          style={{ marginRight: '10px', color: '#6a9cff' }}
+        />
         Seller
       </div>
       <Menu
-        style={{ background: 'white', color: '#151b20',}}
+        style={{ background: 'white', color: '#151b20' }}
         theme="light"
         mode="inline"
         defaultSelectedKeys={['2']}
-        items={sidebarItems(role.ADMIN)}
+        items={sidebarItems(role.SELLER)}
       />
     </Sider>
   )
