@@ -13,7 +13,7 @@ export default function Contents({ children }: { children: React.ReactNode }) {
     <Content
       style={{
         minHeight: '100vh',
-        margin: '24px 16px 0',
+        margin: '30px',
         color: 'black',
         marginTop: '100px',
       }}
