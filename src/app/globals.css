@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
   box-sizing: border-box;
@@ -13,9 +16,6 @@ body::-webkit-scrollbar {
 h1,h2,h3,h4,h5,h6{
   margin:10px 0px;
   font-weight: 600;
-}
-h4{
-  font-weight: 400;
 }
 
 .flexCenterBetween{
