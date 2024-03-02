@@ -11,6 +11,7 @@ interface IButton {
   style?: object
   size?: SizeType
   onClick?: any
+  className?:any
 }
 export default function SVButton({
   type,
@@ -18,12 +19,14 @@ export default function SVButton({
   title,
   style,
   onClick,
+  className
 }: IButton): React.ReactNode {
   return (
     <Button
       type={type || 'primary'}
       size={size || 'large'}
-      style={{ ...style, fontSize: '12px' }}
+      style={{ ...style, fontSize: '12px', background:'#4d3ca3' }}
+      className={className}
       onClick={onClick}
     >
       {title}
