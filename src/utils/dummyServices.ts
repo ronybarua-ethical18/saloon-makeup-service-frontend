@@ -1,3 +1,7 @@
+import HairImage from '@/assets/hair2.png'
+import Makeup from '@/assets/makeup2.png'
+import Skin from '@/assets/skin2.png'
+
 export const dummyServices = [
   {
     name: 'Luxe Grooming Haven',
@@ -16,7 +20,7 @@ export const dummyServices = [
       'Experience the epitome of male grooming at Luxe Grooming Haven, where precision meets pampering. Our deluxe beard trim service transforms facial hair into a masterpiece of sophistication. Step into an atmosphere of refined elegance and indulge in the opulence of our studio, designed to be your haven for unparalleled grooming. Discover the artistry of our whisker wizards and embrace the extraordinary at Luxe Grooming Haven.',
     availability: true,
     shop: {
-      $oid: '65a3c3e74f37a53629b2de6e',
+      name: 'Style Vibe Makeup service',
     },
   },
   {
@@ -36,7 +40,7 @@ export const dummyServices = [
       'Indulge in the ultimate luxury of hair care with our Opulent Locks Couture Deluxe Haircut. Experience personalized attention from our skilled stylists who specialize in crafting a bespoke look that complements your style. This deluxe service includes a meticulous haircut, premium styling, and a rejuvenating wash. Elevate your grooming routine with Opulent Locks Couture and embrace a new level of sophistication.',
     availability: true,
     shop: {
-      $oid: '65a3c3e74f37a53629b2de6e',
+      name: 'Style Vibe Makeup service',
     },
   },
   {
@@ -56,7 +60,7 @@ export const dummyServices = [
       "Immerse yourself in the epitome of grooming precision with our 'Nape Elegance Refinement' service. This specialized neck shave is designed to redefine the contours of your neck and enhance your overall look. Our skilled barbers meticulously trim and shape the nape area, ensuring a clean and polished finish. Experience the artistry of our barbers as they blend expertise with attention to detail, leaving you with a refined and sophisticated appearance. Elevate your grooming routine with 'Nape Elegance Refinement' and embrace the subtle touch that transforms the ordinary into extraordinary.",
     availability: true,
     shop: {
-      $oid: '65a3c3e74f37a53629b2de6e',
+      name: 'Style Vibe Makeup service',
     },
   },
   {
@@ -76,7 +80,7 @@ export const dummyServices = [
       "Immerse yourself in the pinnacle of self-care with our 'Ultimate Grooming Experience - Shave & Facial.' This comprehensive service combines the artistry of a classic shave with the rejuvenating benefits of a tailored facial treatment. Our skilled barbers expertly wield the razor to provide a smooth and precise shave, followed by a customized facial that cleanses, exfoliates, and hydrates your skin. Relax in the hands of our grooming professionals as they deliver a harmonious blend of precision and pampering, leaving you with a refreshed, revitalized, and impeccably groomed appearance. Treat yourself to the ultimate indulgence and experience grooming at its finest with our 'Ultimate Grooming Experience - Shave & Facial.",
     availability: true,
     shop: {
-      $oid: '65a3c3e74f37a53629b2de6e',
+      name: 'Style Vibe Makeup service',
     },
   },
   {
@@ -96,7 +100,7 @@ export const dummyServices = [
       "Elevate your natural beauty with our 'Radiant Glamour Facial Makeup' service. Our skilled makeup artists specialize in creating stunning and customized looks to enhance your features and ensure you look and feel your best for any special occasion. Whether it's a glamorous evening event, a wedding, or a photoshoot, our expert team will use high-quality makeup products and precise techniques to achieve a flawless finish that complements your unique style. From subtle enhancements to bold transformations, trust us to bring out your inner radiance with our 'Radiant Glamour Facial Makeup' service.",
     availability: true,
     shop: {
-      $oid: '65a3c43b4f37a53629b2de71',
+      name: 'Style Vibe Makeup service',
     },
   },
   {
@@ -116,7 +120,25 @@ export const dummyServices = [
       "Unleash the magic of your gaze with our 'Enchanting Eyes Express service powered by ChatGPT. Our skilled makeup artists are dedicated to creating captivating eye looks tailored to your preferences and personality. Whether you desire a sultry smoky eye, a playful pop of color, or a classic elegant style, our team, guided by the creativity of ChatGPT, will craft a mesmerizing eye makeup experience just for you. Using top-notch products and the latest trends, we ensure your eyes become the focal point, leaving a lasting impression. Elevate your beauty and express your unique style with 'Enchanting Eyes Express.",
     availability: true,
     shop: {
-      $oid: '65a3c43b4f37a53629b2de71',
+      name: 'Style Vibe Makeup service',
     },
+  },
+]
+
+export const serviceCategories = [
+  {
+    id: 1,
+    name: 'Beard and Hair Services',
+    img: HairImage,
+  },
+  {
+    id: 2,
+    name: 'Makeup Services',
+    img: Makeup,
+  },
+  {
+    id: 3,
+    name: 'Skincare Services',
+    img: Skin,
   },
 ]

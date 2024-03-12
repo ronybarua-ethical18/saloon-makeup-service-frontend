@@ -7,6 +7,8 @@ import React from 'react'
 import HeaderImage from '@/assets/2.png'
 import SVButton from '../SVButton'
 import SVServiceCard from './SVServiceCard'
+import SVTypesOfServices from './SVTypesOfServices'
+import SVHowItWorks from './SVHowItWorks'
 
 export default function LandingPage() {
   return (
@@ -81,6 +83,8 @@ export default function LandingPage() {
       </Row>
     </div>
       <SVServiceCard />
+      <SVHowItWorks />
+      <SVTypesOfServices />
     </>
   )
 }
