@@ -39,7 +39,7 @@ export default function SVCard({ service }: any): React.ReactNode {
         <Rate allowHalf defaultValue={2.5}  />
       </div>
  
-      <div className="w-full text-center p-3 bg-purple-400 text-white flex-none cursor-pointer">
+      <div className="w-full text-center p-3 bg-customPrimary-800 text-white flex-none cursor-pointer">
         ADD TO CART
       </div>
     </div>
