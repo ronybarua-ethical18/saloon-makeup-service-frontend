@@ -10,7 +10,7 @@ export default function SVServiceCard() {
         <SVSectionTitle title1='TOP RATED' title2='SERVICES' />
         <Row  gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
             {dummyServices.map((service:any) =>(
-                <Col xs={24} sm={12} md={8} lg={6} xl={6} key={service._id} className='mb-8'>
+                <Col xs={24} sm={12} md={4} lg={4} xl={4} key={service._id} className='mb-8'>
                     <SVCard service={service} />
                 </Col>
             ))}

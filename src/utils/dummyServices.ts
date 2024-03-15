@@ -142,3 +142,30 @@ export const serviceCategories = [
     img: Skin,
   },
 ]
+
+export const dummyClientReviews = [
+  {
+    id: 1,
+    name: '',
+    rating: 4,
+    review: `I have been going to Style Vibe for my makeup needs since I moved here  from the city. They are professional, friendly`,
+  },
+  {
+    id: 2,
+    name: '',
+    rating: 5,
+    review: `I have been going to Style Vibe for my makeup needs since I moved here  from the city. They are professional, friendly`,
+  },
+  {
+    id: 3,
+    name: '',
+    rating: 3,
+    review: `I have been going to Style Vibe for my makeup needs since I moved here  from the city. They are professional, friendly`,
+  },
+  {
+    id: 4,
+    name: '',
+    rating: 4,
+    review: `I have been going to Style Vibe for my makeup needs since I moved here  from the city. They are professional, friendly`,
+  },
+]

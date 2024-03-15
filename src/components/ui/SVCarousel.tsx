@@ -41,9 +41,10 @@ export default function SVCarousel() {
           layout="responsive"
           objectFit="contain"
           objectPosition="center center"
+          alt=""
         />
         <div style={{marginBottom:"70px"}}>
-          <h1 style={{margin:0}}>Unleash Your Radiance</h1>
+          <h1 className='text-3xl'>Unleash Your Radiance</h1>
           <h4>Transformative Salon and Makeup Services for a Glamorous You!</h4>
         </div>
       </div>
@@ -54,9 +55,10 @@ export default function SVCarousel() {
           layout="responsive"
           objectFit="contain"
           objectPosition="center center"
+          alt=""
         />
         <div style={{marginBottom:"70px"}}>
-          <h1>Indulge in Luxury</h1>
+          <h1 className='text-3xl'>Indulge in Luxury</h1>
           <h4>
             Elevate Your Beauty with Our Exclusive Salon and Makeup Offerings.
           </h4>
@@ -71,9 +73,10 @@ export default function SVCarousel() {
           layout="responsive"
           objectFit="contain"
           objectPosition="center center"
+          alt=""
         />
         <div style={{marginBottom:"70px"}}>
-          <h1>Rediscover Your Glow</h1>
+          <h1 className='text-3xl'>Rediscover Your Glow</h1>
           <h4>Pampering You Deserve with Expert Salon and Makeup Artistry.</h4>
         </div>
       </div>

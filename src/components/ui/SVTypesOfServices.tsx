@@ -30,22 +30,24 @@ export default function SVTypesOfServices() {
                 key={category.id}
               >
                 <div className="mr-5">
-                <Image
-  src={
-    category.id === active ? 
-    (active === 1 ? HairImage :
-    active === 2 ? Makeup :
-    active === 3 ? Skin :
-    category.img) : 
-    category.img
-  }
-  objectFit="contain"
-  objectPosition="center"
-  width={80}
-  height={80}
-  alt=""
-/>
-
+                  <Image
+                    src={
+                      category.id === active
+                        ? active === 1
+                          ? HairImage
+                          : active === 2
+                            ? Makeup
+                            : active === 3
+                              ? Skin
+                              : category.img
+                        : category.img
+                    }
+                    objectFit="contain"
+                    objectPosition="center"
+                    width={80}
+                    height={80}
+                    alt=""
+                  />
                 </div>
                 <div>
                   <h3
@@ -77,9 +79,9 @@ export default function SVTypesOfServices() {
           <Col
             xs={24}
             sm={12}
-            md={8}
-            lg={6}
-            xl={6}
+            md={6}
+            lg={4}
+            xl={4}
             key={service._id}
             className="mb-8"
           >
