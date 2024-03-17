@@ -169,3 +169,36 @@ export const dummyClientReviews = [
     review: `I have been going to Style Vibe for my makeup needs since I moved here  from the city. They are professional, friendly`,
   },
 ]
+
+export const dummyBlogs = [
+  {
+    id: 1,
+    title: 'Trendy Hairstyles for This Season',
+    content:
+      'Explore the latest and trendiest hairstyles for this season. From chic bobs to elegant updos, discover the perfect look for you.',
+    media: 'https://example.com/salon-image.jpg',
+    author: 'Rony Barua',
+    tags: ['hairstyles', 'beauty', 'fashion', 'salon'],
+    createdAt: '2024-03-02',
+  },
+  {
+    id: 2,
+    title: 'Trendy Hairstyles for This Season 2',
+    content:
+      'Explore the latest and trendiest hairstyles for this season. From chic bobs to elegant updos, discover the perfect look for you.',
+    media: 'https://example.com/salon-image.jpg',
+    author: 'Rony Barua',
+    tags: ['hairstyles', 'beauty', 'fashion', 'salon'],
+    createdAt: '2024-03-02',
+  },
+  {
+    id: 3,
+    title: 'Trendy Hairstyles for This Season 3',
+    content:
+      'Explore the latest and trendiest hairstyles for this season. From chic bobs to elegant updos, discover the perfect look for you.',
+    media: 'https://example.com/salon-image.jpg',
+    author: 'Rony Barua',
+    tags: ['hairstyles', 'beauty', 'fashion', 'salon'],
+    createdAt: '2024-03-02',
+  },
+]

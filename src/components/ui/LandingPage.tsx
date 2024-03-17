@@ -11,6 +11,8 @@ import SVTypesOfServices from './SVTypesOfServices'
 import SVHowItWorks from './SVHowItWorks'
 import SVTotalClients from './SVTotalClients'
 import SVClientReview from './SVClientReview'
+import SVLatestBlogs from './SVLatestBlogs'
+import SVFAQ from './SVFAQ'
 
 export default function LandingPage() {
   return (
@@ -98,6 +100,8 @@ export default function LandingPage() {
       <SVTypesOfServices />
       <SVTotalClients />
       <SVClientReview />
+      <SVLatestBlogs />
+      <SVFAQ />
     </>
   )
 }
