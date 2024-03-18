@@ -13,6 +13,7 @@ import SVTotalClients from './SVTotalClients'
 import SVClientReview from './SVClientReview'
 import SVLatestBlogs from './SVLatestBlogs'
 import SVFAQ from './SVFAQ'
+import SVNewsLetter from './SVNewsLetter'
 
 export default function LandingPage() {
   return (
@@ -102,6 +103,7 @@ export default function LandingPage() {
       <SVClientReview />
       <SVLatestBlogs />
       <SVFAQ />
+      <SVNewsLetter />
     </>
   )
 }

@@ -6,7 +6,7 @@ import { useFormContext, Controller } from "react-hook-form";
 interface IInput {
   name: string;
   type?: string;
- 
+  variant?:any;
   size?: "large" | "small";
   value?: string | string[] | undefined;
   id?: string;
@@ -27,6 +27,7 @@ const FormInput = ({
   placeholder,
   validation,
   label,
+  variant ='outlined',
   required,
 }: IInput) => {
   const {
@@ -51,15 +52,17 @@ const FormInput = ({
       <Controller
         control={control}
         name={name}
-        render={({ field }) =>
+        render={({ field }:any) =>
           type === "password" ? (
             <Input.Password
               type={type}
               size={size}
               prefix={prefix}
               placeholder={placeholder}
-              {...field}
               value={value ? value : field.value}
+              variant={variant}
+              {...field}
+              
             />
           ) : (
             <Input
@@ -67,8 +70,10 @@ const FormInput = ({
               size={size}
               prefix={prefix}
               placeholder={placeholder}
-              {...field}
               value={value ? value : field.value}
+              variant={variant}
+              {...field}
+             
             />
           )
         }

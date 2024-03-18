@@ -13,19 +13,19 @@ const text = `
 const getItems: (panelStyle: CSSProperties) => CollapseProps['items'] = (panelStyle) => [
   {
     key: '1',
-    label: 'This is panel header 1',
+    label: <p className='text-base font-normal'>How do i become a member of the portal?</p>,
     children: <p>{text}</p>,
     style: panelStyle,
   },
   {
     key: '2',
-    label: 'This is panel header 2',
+    label: <p className='text-base font-normal'>What is the payment system of the portal?</p>,
     children: <p>{text}</p>,
     style: panelStyle,
   },
   {
     key: '3',
-    label: 'This is panel header 3',
+    label: <p className='text-base font-normal'>How long do you guys offering services?</p>,
     children: <p>{text}</p>,
     style: panelStyle,
   },
@@ -47,7 +47,7 @@ const SVCollapse: React.FC = () => {
       defaultActiveKey={['1']}
       expandIcon={({ isActive }) => <CaretRightOutlined rotate={isActive ? 90 : 0} />}
       expandIconPosition='right'
-      style={{ background: token.colorBgContainer }}
+      style={{ background: token.colorBgContainer, }}
       items={getItems(panelStyle)}
     />
   );

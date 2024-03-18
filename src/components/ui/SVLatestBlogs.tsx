@@ -41,10 +41,10 @@ export default function SVLatestBlogs() {
                 </div>
                 <h2 className="text-2xl font-normal">{blog.title}</h2>
                 <p className="mt-8">{blog.content}</p>
-                <div className='flex'>
+                <div className='flex flex-wrap mt-8'>
 
                 {blog.tags.map((tag, index) =>(
-                   <p key={index} className='p-2 rounded-md border border-customPrimary-800 text-customPrimary-800 mr-2 mt-8'> {tag}</p>
+                   <p key={index} className='p-2 rounded-md border border-customPrimary-800 text-customPrimary-800 mr-2 mt-2'> {tag}</p>
                 ))}
                 </div>
                 <SVButton title='Learn more' className='w-full mt-10'/>
