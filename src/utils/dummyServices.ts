@@ -128,7 +128,7 @@ export const dummyServices = [
 export const serviceCategories = [
   {
     id: 1,
-    name: 'Beard and Hair Services',
+    name: 'Beard & Hair Services',
     img: HairImage,
   },
   {

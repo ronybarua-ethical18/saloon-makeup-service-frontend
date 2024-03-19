@@ -14,11 +14,13 @@ import SVClientReview from './SVClientReview'
 import SVLatestBlogs from './SVLatestBlogs'
 import SVFAQ from './SVFAQ'
 import SVNewsLetter from './SVNewsLetter'
+import SVFooter from './SVFooter'
+import SVNavMenus from './SVNavMenus'
 
 export default function LandingPage() {
   return (
     <>
-      <div className="h-screen flex justify-center items-center px-8 md:px-32">
+      <div className="h-screen flex justify-center items-center w-3/4 m-auto">
         <Row
           gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}
           className="h-full flex items-center"
@@ -36,32 +38,7 @@ export default function LandingPage() {
                   </span>
                 </h1>
               </div>
-              <div className="hidden md:flex items-center space-x-4">
-                <a
-                  href="#"
-                  className="text-gray-600 transition duration-300 hover:text-violet-700"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 transition duration-300 hover:text-violet-700"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 transition duration-300 hover:text-violet-700"
-                >
-                  Services
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-600 transition duration-300 hover:text-violet-700"
-                >
-                  Contact
-                </a>
-              </div>
+              <SVNavMenus />
             </div>
           </Col>
           <Col span={12}>
@@ -104,6 +81,7 @@ export default function LandingPage() {
       <SVLatestBlogs />
       <SVFAQ />
       <SVNewsLetter />
+      <SVFooter />
     </>
   )
 }

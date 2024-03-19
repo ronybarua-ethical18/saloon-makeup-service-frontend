@@ -12,15 +12,15 @@ import Skin from '@/assets/skin1.png'
 export default function SVTypesOfServices() {
   const [active, setActive] = useState(2)
   return (
-    <div className="px-8 md:px-32 mt-20">
+    <div className='mt-20'>
       <SVSectionTitle title1="CATEGORIES OF" title2="SERVICES" />
-      <div className="w-3/4 m-auto flex justify-center my-10">
+      <div className="w-2/4 m-auto flex justify-center">
         {serviceCategories.map(
           (category: { id: number; name: string; img: any }) => {
             return (
               <div
                 onClick={e => setActive(category.id)}
-                className={`flex items-center cursor-pointer py-10 px-6 shadow-simple-shadow w-2/4  ${
+                className={`flex items-center cursor-pointer py-8 px-4 shadow-simple-shadow w-2/4  ${
                   category.id === active ? 'bg-customPrimary-800' : ''
                 } mb-16 ${
                   category.id !== active
@@ -29,7 +29,7 @@ export default function SVTypesOfServices() {
                 }`}
                 key={category.id}
               >
-                <div className="mr-5">
+                <div className="mr-4">
                   <Image
                     src={
                       category.id === active
@@ -44,14 +44,14 @@ export default function SVTypesOfServices() {
                     }
                     objectFit="contain"
                     objectPosition="center"
-                    width={80}
-                    height={80}
+                    width={60}
+                    height={60}
                     alt=""
                   />
                 </div>
                 <div>
                   <h3
-                    className={`text-xl font-normal ${
+                    className={`text-lg font-normal ${
                       category.id === active
                         ? 'text-gray-200'
                         : ' text-gray-700'
@@ -64,7 +64,7 @@ export default function SVTypesOfServices() {
                       category.id === active
                         ? 'text-gray-200'
                         : ' text-gray-700'
-                    }`}
+                    } text-sm`}
                   >
                     TREATMENT
                   </h4>
@@ -74,14 +74,15 @@ export default function SVTypesOfServices() {
           },
         )}
       </div>
-      <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+     <div className='w-3/4 m-auto'>
+     <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
         {dummyServices.map((service: any) => (
           <Col
             xs={24}
             sm={12}
             md={6}
-            lg={4}
-            xl={4}
+            lg={6}
+            xl={6}
             key={service._id}
             className="mb-8"
           >
@@ -89,6 +90,7 @@ export default function SVTypesOfServices() {
           </Col>
         ))}
       </Row>
+     </div>
     </div>
   )
 }

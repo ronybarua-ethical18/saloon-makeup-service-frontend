@@ -15,6 +15,7 @@ interface IInput {
   label?: string;
   required?: boolean;
   prefix?:React.ReactNode;
+  style?:object
 }
 
 const FormInput = ({
@@ -26,6 +27,7 @@ const FormInput = ({
   id,
   placeholder,
   validation,
+  style,
   label,
   variant ='outlined',
   required,
@@ -61,6 +63,7 @@ const FormInput = ({
               placeholder={placeholder}
               value={value ? value : field.value}
               variant={variant}
+             
               {...field}
               
             />
@@ -72,6 +75,7 @@ const FormInput = ({
               placeholder={placeholder}
               value={value ? value : field.value}
               variant={variant}
+              style={style}
               {...field}
              
             />

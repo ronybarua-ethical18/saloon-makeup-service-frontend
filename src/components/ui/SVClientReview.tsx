@@ -15,15 +15,15 @@ export default function SVClientReview() {
     speed: 500,
     // autoplaySpeed:2000,
     autoplay: true,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     prevArrow: <></>, // Use empty fragment to hide previous button
     nextArrow: <></>,
   }
   return (
-    <div className="px-8 md:px-32">
+    <div className="">
       <SVSectionTitle title1="WHAT PEOPLE THINKS " title2="ABOUT US" />
-      <div className="w-3/4 m-auto bg-white">
+      <div className="w-2/4 m-auto bg-white">
         <Slider {...settings}>
           {dummyClientReviews.map((client, index) => (
             <div key={client.id} className="mb-14">
